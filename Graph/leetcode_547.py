@@ -1,9 +1,9 @@
 # Problem: 547. Number of Provinces
 # Difficulty: Medium
-# Date: 2021-07-25
-
+# Date: 2025-03-11
 
 from collections import defaultdict
+from types import List
 
 class Solution:
     def findCircleNum(self, isConnected: List[List[int]]) -> int:
