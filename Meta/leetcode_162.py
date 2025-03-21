@@ -6,20 +6,12 @@ from typing import List
 
 class Solution:
     def findPeakElement(self, nums: List[int]) -> int:
+        nums = [nums[0] - 1] + nums + [nums[-1] - 1]
         n = len(nums)
-        if n == 1:
-            return 0
-
-        if nums[-1] > nums[-2]:
-            return n - 1
-
-        if nums[0] > nums[1]:
-            return 0
-
         p = 1
-        while p < n-1:
+        while p < n - 1:
             if nums[p-1] < nums[p] > nums[p+1]:
-                return p
+                return p - 1
             p += 1
 
         
