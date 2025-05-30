@@ -1,4 +1,4 @@
-# 322. Coin Change
+# Problem: 322. Coin Change
 # Difficulty: Medium
 # Date: 2025-05-16
 
